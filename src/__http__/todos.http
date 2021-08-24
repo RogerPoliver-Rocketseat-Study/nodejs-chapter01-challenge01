@@ -1,0 +1,31 @@
+# Get todos from a user
+GET http://localhost:3333/todos
+Content-Type: application/json
+username: rogerpoliver
+####
+
+# Create a todo
+POST http://localhost:3333/todos
+Content-Type: application/json
+username: rogerpoliver
+
+{
+  "title": "Study nodejs",
+  "deadline": "2021-08-27"
+}
+####
+
+PUT http://localhost:3333/todos/b5ff8241-1dac-4a05-9f03-b7f83f26eddd
+Content-Type: application/json
+username: rogerpoliver
+
+{
+  "title": "Study more more more nodejs",
+  "deadline": "2021-08-30"
+}
+
+####
+PATCH http://localhost:3333/todos/ad293603-c9e5-405d-bc36-ea3f04b90328/done
+Content-Type: application/json
+username: rogerpoliver
+
